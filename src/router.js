@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Inicio from './components/Inicio'
 import Usuario from './components/usuario/Usuario'
 
-Vue.use(Router)
+Vue.use(Router) // chamar usando $router
 
 export default new Router({
     // mode: 'hash',
