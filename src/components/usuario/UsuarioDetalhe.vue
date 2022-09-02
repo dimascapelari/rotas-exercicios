@@ -21,6 +21,12 @@
 <script>
 export default {
   props: ["id"],
+  beforeRouteEnter(to, from, next) {
+    console.log("dentro do componente -> usuário detalhe");
+
+    const autenticado = true;
+    autenticado ? next() : next(false);
+  },
   //   data() {
   //     return {
   //       id: this.$route.params.id,
